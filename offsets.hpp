@@ -39,3 +39,29 @@ namespace functions {
 	uintptr_t getchildren = 0x9C7130;
 	uintptr_t destroy = 0x1D4C378;
 }
+
+// Sorry for shitty code
+
+typedef void(__fastcall* _print)(std::uint8_t, const char*, ...);
+_print print = (_print)((uintptr_t)GetModuleHandle(nullptr) + functions::print);
+
+uintptr_t get_datamodel()
+{
+	const auto get_datamodel = reinterpret_cast<uintptr_t(_cdecl*)()>((uintptr_t)GetModuleHandle(nullptr) + instances::datamodel);
+
+	return get_datamodel();
+}
+
+uintptr_t get_scheduler()
+{
+	const auto get_scheduler = reinterpret_cast<uintptr_t(_cdecl*)()>((uintptr_t)GetModuleHandle(nullptr) + instances::scheduler);
+
+	return get_scheduler();
+}
+
+uintptr_t get_camera()
+{
+	const auto get_camera = reinterpret_cast<uintptr_t(_cdecl*)()>((uintptr_t)GetModuleHandle(nullptr) + instances::camera);
+
+	return get_camera();
+}
