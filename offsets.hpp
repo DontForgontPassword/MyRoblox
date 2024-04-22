@@ -4,6 +4,8 @@ namespace fields {
 	uint8_t workspace = 0x2D0;
 	uint8_t players = 0x1E8; // Я не уверен ебать
 	uint8_t health = 0x174;
+	uint8_t jumppower = 0x190;
+	uint8_t hipheight = 0x180;
 	uint8_t walkspeed = 0x1B0;
 	uint8_t camerafieldofview = 0x138; // (float)(*(float *)(a1 + 0x138) * 180.0) / 3.1415927;
 	uint8_t anchored = 0x158; // *(unsigned __int8 *)(*(_QWORD *)(a1 + 0x158) + 0x2F1i64);
