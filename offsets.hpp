@@ -1,3 +1,5 @@
+// Discord experienceinmymind
+
 namespace fields {
 	uint8_t workspace = 0x2D0;
 	uint8_t players = 0x1E8; // Я не уверен ебать
