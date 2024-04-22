@@ -33,4 +33,7 @@ namespace functions {
 	uintptr_t loadstring = 0xE91430;
 	uintptr_t spawn = 0xE922A0;
 	uintptr_t print = 0x12552E0;
+	uintptr_t getdescendants = 0x1D2B6B0;
+	uintptr_t getchildren = 0x9C7130;
+	uintptr_t destroy = 0x1D4C378;
 }
