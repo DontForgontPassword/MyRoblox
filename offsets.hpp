@@ -16,12 +16,14 @@ namespace fields {
 	uint8_t cancollide_2 = 0x2F3;
 	uint8_t shape = 0x240;
 	uint8_t name = 0x8;
+	uint8_t destroy = 0xA0;
 }
 
 namespace instances {
 	uintptr_t datamodel = 0x13B81B0;
 	uintptr_t scheduler = 0x13C4000;
 	uintptr_t camera = 0x15045F0;
+	uintptr_t scriptcontext = 0xC00C00;
 }
 
 namespace functions {
@@ -39,8 +41,6 @@ namespace functions {
 	uintptr_t getchildren = 0x9C7130;
 	uintptr_t destroy = 0x1D4C378;
 }
-
-// Sorry for shitty code
 
 typedef void(__fastcall* _print)(std::uint8_t, const char*, ...);
 _print print = (_print)((uintptr_t)GetModuleHandle(nullptr) + functions::print);
