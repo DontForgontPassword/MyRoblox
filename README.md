@@ -1,1 +1,1 @@
-# Authour: experienceinmymind
+# Author: experienceinmymind
